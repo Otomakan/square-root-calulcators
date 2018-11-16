@@ -25,10 +25,37 @@
 	  </div>
 	</nav>
 	<div class="container">
-	<h1>Welcome to the Simple Project Generator!</h1>
-	<h3>Feel free to customize this html page at index.html, the scss files in src/styles/ or the javascript in src/js</h3>	
 
+    <div id='calculator-wrapper'>
+	<div id='calculator'>
+        <div id='input-first-helper'></div>
+        <div class='input-group mb-3'>
+        <input  type='text' class='form-control' id='main-input' class='math-input' type='text' placeholder='Enter Positive Number' /> 
+        </div>
+        <div  id='operators'>    
+          <div class='btn btn-primary btn-sm'>Del</div>  
+          <div class='btn btn-primary btn-sm'>+</div>
+          <div class='btn btn-primary btn-sm'>-</div>
+          <div class='btn btn-primary btn-sm'>×</div>
+          <div class='btn btn-primary btn-sm'>÷</div>
+          <div class='btn btn-primary btn-sm'>√</div>
+          <div class='btn btn-primary btn-sm'>^</div>
+          <div class='btn btn-primary btn-sm'>(</div>
+          <div class='btn btn-primary btn-sm'>)</div>
+        </div>
+        <div  id='calculator-input-button-wrapper'>
+          <div id='wrap-left-cal-button'>
+        <button id='calculate-button' class='btn btn-primary'> Calculate</button> 
+      </div>
 	</div>
+	<div id="root-calculator-result-box">
+		<div id="root-results" class='results-mini-container'>
+			<h5>Results</h5>
+			<div id="Math javascript Method"></div>
+		</div>
+	</div>
+</div>
+
 
 </body>
 </html>

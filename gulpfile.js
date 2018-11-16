@@ -29,7 +29,7 @@ gulp.task('serve', function() {
     browserSync.init({
         server: "./"
     });
-    gulp.watch('src/js/*.js',['compress'])
+    gulp.watch('src/js/*.js',['compress']).on('change',browserSync.reload)
     gulp.watch('src/styles/*.scss',['clean-css']).on('change',browserSync.reload)
     // gulp.watch('src/js/*.js',['browserify']).on('change',browserSync.reload)
     gulp.watch('*').on('change',browserSync.reload)
