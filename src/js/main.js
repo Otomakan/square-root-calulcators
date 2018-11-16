@@ -54,7 +54,7 @@ ready(function(){
       //Calculate the square Root
       let squareRootsResults = rootCalculator(target);
       let resultsDiv = document.getElementById('root-results')
-       resultsDiv.innerHTML =""
+       resultsDiv.innerHTML = ""
       //Reset the errors
       // document.getElementById('derivative-calculator-errors').innerHTML= '';
       //Write the results in the HTML
