@@ -1,0 +1,84 @@
+$light-grey : #E5E7E8;
+$dark-grey :#323438;
+$light-green:#5ff475;
+$dark-green:#299939; 
+$main-blue: #2583FC;
+$box-border-radius: 0.25rem;
+$theme-colors: (
+  "primary":$main-blue,
+  "danger": $light-green
+);
+
+$navbar-light-color: white;
+$navbar-light-background-color: $main-blue;
+$navbar-light-bg: $main-blue;
+$navbar-light-hover-color:   $light-grey;
+$bg-light: red;
+
+@import "node_modules/bootstrap-scss/bootstrap.scss";
+.bg-light {
+  background-color:  $main-blue;
+  }
+ nav{
+  background-color: $main-blue;
+  color:white !important;    
+  width: 100vw;
+    display: block;
+    margin: 0;
+    left: 0;
+    position: absolute;
+    top: 0;
+    .menu-item a{
+      color:white!important;
+      text-decoration: none;
+    }
+}
+.navbar-light .navbar-brand {
+    color: white;
+}
+
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
+    color: white;
+}
+.navbar-light .navbar-nav .nav-link {
+    color: white;
+}
+.navbar-nav{
+  a{
+    background-color: $main-blue;
+    z-index: 1000;
+    border-bottom: none;
+
+  }
+}
+.collapse.navbar-collapse{
+  z-index:100000;
+}
+.navbar-nav.show{
+  a{
+    // border-bottom: 0.5px solid white;
+  }
+}
+.navbar-brand{
+  background-color: $main-blue;
+  z-index: 1;
+  border-left:0.5px solid white;
+  border-bottom: none!important;
+}
+.navbar-toggler{
+  background-color: $main-blue;
+  z-index: 1000;
+ }
+.navbar-toggler-icon{
+   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+#navbar-bar{
+  padding: 0;
+  margin:0;
+  width:90%;
+  // display: none;
+  position:absolute;
+  visibility: hidden;
+  border:solid white 0.5px;
+  z-index: 2;
+}
